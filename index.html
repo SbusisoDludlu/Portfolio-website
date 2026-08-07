@@ -169,10 +169,20 @@
             margin-right: 15px;
             margin-bottom: 15px;
             transition: transform 0.3s, background-color 0.3s;
+            border: none;
+            cursor: pointer;
         }
 
         .btn:hover {
             transform: translateY(-3px);
+        }
+
+        .btn-success {
+            background-color: #28a745;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
         }
 
         /* Sections */
@@ -295,6 +305,54 @@
 
         .project-links {
             margin-top: 1.5rem;
+        }
+
+        /* Certificates Section */
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .certificate-card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .certificate-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .certificate-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .certificate-card .issuer {
+            color: var(--secondary-color);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .certificate-card .date {
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .certificate-card .btn {
+            margin: 0.5rem;
         }
 
         /* Education Section */
@@ -435,6 +493,10 @@
             .hero-image {
                 margin-top: 0;
             }
+
+            .certificates-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* Career Interests */
@@ -466,6 +528,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -638,7 +701,7 @@
                     </div>
                 </div>
 
-                <!-- NEW Project 3: HackerNews Dashboard -->
+                <!-- Project 3: HackerNews Dashboard -->
                 <div class="project-card">
                     <img src="skynews-hacker-cyberattack_6439404.jpg" alt="HackerNews Dashboard" class="project-img">
                     <div class="project-content">
@@ -659,6 +722,37 @@
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certificates</h2>
+            </div>
+            
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Introduction to Modern AI</h3>
+                    <p class="issuer">Cape Peninsula University of Technology</p>
+                    <p class="date">Issued: 2026</p>
+                    <p style="margin-bottom: 1.5rem; font-size: 0.95rem;">
+                        This certificate demonstrates foundational knowledge in modern Artificial Intelligence concepts, including machine learning, neural networks, and AI applications.
+                    </p>
+                    <div>
+                        <a href="Introduction_to_Modern_AI_certificate_230961185-mycput-ac-za_7d11c864-b5a4-4cd6-8fbd-6673788bc11b (1).pdf" target="_blank" class="btn">
+                            <i class="fas fa-eye"></i> View Certificate
+                        </a>
+                        <a href="Introduction_to_Modern_AI_certificate_230961185-mycput-ac-za_7d11c864-b5a4-4cd6-8fbd-6673788bc11b (1).pdf" download class="btn btn-success">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
                     </div>
                 </div>
             </div>
